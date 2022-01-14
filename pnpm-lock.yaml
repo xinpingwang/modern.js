@@ -4469,6 +4469,43 @@ importers:
     devDependencies:
       '@modern-js/app-tools': link:../../../packages/solutions/app-tools
 
+  tests/integration/bff-express:
+    specifiers:
+      '@modern-js/app-tools': workspace:^1.0.0
+      '@modern-js/plugin-bff': workspace:^1.2.1
+      '@modern-js/plugin-express': workspace:^1.2.0
+      '@modern-js/plugin-jarvis': workspace:^1.0.0
+      '@modern-js/runtime': workspace:^1.0.0
+      '@types/express': ^4.17.13
+      '@types/jest': ^27.4.0
+      '@types/node': ^14
+      '@types/react': ^17
+      '@types/react-dom': ^17
+      axios: ^0.24.0
+      del-cli: ^4.0.1
+      express: ^4.17.2
+      react: ^17.0.1
+      react-dom: ^17.0.1
+      typescript: ^4
+    dependencies:
+      '@modern-js/plugin-bff': link:../../../packages/cli/plugin-bff
+      '@modern-js/plugin-express': link:../../../packages/server/plugin-express
+      '@modern-js/runtime': link:../../../packages/cli/plugin-runtime
+      express: 4.17.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    devDependencies:
+      '@modern-js/app-tools': link:../../../packages/solutions/app-tools
+      '@modern-js/plugin-jarvis': link:../../../packages/cli/plugin-jarvis
+      '@types/express': 4.17.13
+      '@types/jest': 27.4.0
+      '@types/node': 14.18.4
+      '@types/react': 17.0.38
+      '@types/react-dom': 17.0.11
+      axios: 0.24.0
+      del-cli: 4.0.1
+      typescript: 4.5.4
+
   tests/integration/css:
     specifiers:
       '@modern-js/app-tools': workspace:^1.0.0
@@ -8889,7 +8926,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 14.18.4
+      '@types/node': 16.11.18
       '@types/yargs': 16.0.4
       chalk: 4.1.2
 
@@ -9133,8 +9170,8 @@ packages:
       '@babel/runtime': 7.16.7
       redux: 4.1.2
 
-  /@modern-js/babel-chain/1.1.1:
-    resolution: {integrity: sha512-DaQCy4ureRRBkfwzEGh4+yiDAjwEF2Kiyqx0vEkqr6Dv9e6E1UMPCx4nIjylqvMjJ9gmsH7UhGta7utKZqus4Q==}
+  /@modern-js/babel-chain/1.1.2:
+    resolution: {integrity: sha512-Vs5ImNSHux/ZZM0LX8TX4y3x1PbIsM7mmlvy3ouqubAHsMZa42Vzxrz7S4PW/scrc4y2Wt2puTk8NIGNveW27g==}
     dependencies:
       '@babel/runtime': 7.16.7
       '@types/babel__core': 7.1.18
@@ -9175,7 +9212,7 @@ packages:
       '@babel/plugin-transform-destructuring': 7.16.7_@babel+core@7.16.7
       '@babel/runtime': 7.16.7
       '@babel/types': 7.16.8
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_@babel+core@7.16.7
       '@modern-js/utils': 1.1.6
       core-js: 3.20.2
@@ -9197,7 +9234,7 @@ packages:
       '@babel/plugin-transform-destructuring': 7.16.7_@babel+core@7.16.7
       '@babel/runtime': 7.16.7
       '@babel/types': 7.16.8
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_b532843e36e2c7c87675fa32823796d6
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       core-js: 3.20.2
@@ -9219,7 +9256,7 @@ packages:
       '@babel/plugin-transform-destructuring': 7.16.7_@babel+core@7.16.7
       '@babel/runtime': 7.16.7
       '@babel/types': 7.16.8
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_ea312eab47144c11140bfc370ebf6753
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       core-js: 3.20.2
@@ -9254,7 +9291,7 @@ packages:
       '@babel/preset-react': 7.16.7
       '@babel/preset-typescript': 7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/utils': 1.1.6
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-import: 1.13.0
@@ -9292,7 +9329,7 @@ packages:
       '@babel/preset-react': 7.16.7_@babel+core@7.16.7
       '@babel/preset-typescript': 7.16.7_@babel+core@7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/utils': 1.1.6
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-import: 1.13.0
@@ -9330,7 +9367,7 @@ packages:
       '@babel/preset-react': 7.16.7_@babel+core@7.16.7
       '@babel/preset-typescript': 7.16.7_@babel+core@7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-import: 1.13.0
@@ -9368,7 +9405,7 @@ packages:
       '@babel/preset-react': 7.16.7_@babel+core@7.16.7
       '@babel/preset-typescript': 7.16.7_@babel+core@7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-import: 1.13.0
@@ -9406,7 +9443,7 @@ packages:
       '@babel/preset-react': 7.16.7
       '@babel/preset-typescript': 7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-import: 1.13.0
@@ -9444,7 +9481,7 @@ packages:
       '@babel/preset-react': 7.16.7
       '@babel/preset-typescript': 7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-import: 1.13.0
@@ -9464,7 +9501,7 @@ packages:
     resolution: {integrity: sha512-x6pEa+i/ooF08NNi+EMcAzn5En9NXY87QhZUkPw4beVxoALZohxOO/D5lkf7Xy6VeQImn8Z3eDETp6WaqxHluQ==}
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2
       '@modern-js/utils': 1.1.6
       babel-plugin-module-resolver: 4.1.0
@@ -9482,7 +9519,7 @@ packages:
     resolution: {integrity: sha512-x6pEa+i/ooF08NNi+EMcAzn5En9NXY87QhZUkPw4beVxoALZohxOO/D5lkf7Xy6VeQImn8Z3eDETp6WaqxHluQ==}
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_@babel+core@7.16.7
       '@modern-js/utils': 1.1.6
       babel-plugin-module-resolver: 4.1.0
@@ -9500,7 +9537,7 @@ packages:
     resolution: {integrity: sha512-x6pEa+i/ooF08NNi+EMcAzn5En9NXY87QhZUkPw4beVxoALZohxOO/D5lkf7Xy6VeQImn8Z3eDETp6WaqxHluQ==}
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_b532843e36e2c7c87675fa32823796d6
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-module-resolver: 4.1.0
@@ -9518,7 +9555,7 @@ packages:
     resolution: {integrity: sha512-x6pEa+i/ooF08NNi+EMcAzn5En9NXY87QhZUkPw4beVxoALZohxOO/D5lkf7Xy6VeQImn8Z3eDETp6WaqxHluQ==}
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_ea312eab47144c11140bfc370ebf6753
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-module-resolver: 4.1.0
@@ -9536,7 +9573,7 @@ packages:
     resolution: {integrity: sha512-x6pEa+i/ooF08NNi+EMcAzn5En9NXY87QhZUkPw4beVxoALZohxOO/D5lkf7Xy6VeQImn8Z3eDETp6WaqxHluQ==}
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-module-resolver: 4.1.0
@@ -9554,7 +9591,7 @@ packages:
     resolution: {integrity: sha512-x6pEa+i/ooF08NNi+EMcAzn5En9NXY87QhZUkPw4beVxoALZohxOO/D5lkf7Xy6VeQImn8Z3eDETp6WaqxHluQ==}
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-base': 1.1.2_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       babel-plugin-module-resolver: 4.1.0
@@ -9577,7 +9614,7 @@ packages:
       '@babel/plugin-proposal-logical-assignment-operators': 7.16.7
       '@babel/plugin-proposal-throw-expressions': 7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-lib': 1.1.4
       '@modern-js/utils': 1.1.6
     transitivePeerDependencies:
@@ -9596,7 +9633,7 @@ packages:
       '@babel/plugin-proposal-logical-assignment-operators': 7.16.7_@babel+core@7.16.7
       '@babel/plugin-proposal-throw-expressions': 7.16.7_@babel+core@7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-lib': 1.1.4_ea312eab47144c11140bfc370ebf6753
       '@modern-js/utils': 1.1.6_typescript@4.5.4
     transitivePeerDependencies:
@@ -9615,7 +9652,7 @@ packages:
       '@babel/plugin-proposal-logical-assignment-operators': 7.16.7
       '@babel/plugin-proposal-throw-expressions': 7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-lib': 1.1.4_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/utils': 1.1.6_typescript@4.5.4
     transitivePeerDependencies:
@@ -9634,7 +9671,7 @@ packages:
       '@babel/plugin-proposal-logical-assignment-operators': 7.16.7
       '@babel/plugin-proposal-throw-expressions': 7.16.7
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-lib': 1.1.4_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4
     transitivePeerDependencies:
@@ -11824,8 +11861,8 @@ packages:
       - '@types/node'
     dev: false
 
-  /@modern-js/server-plugin/1.1.3:
-    resolution: {integrity: sha512-vv1WTbGMmpzx6iMe8xVRzualQv2spltdxjgQ5ddnh1lXHuEZ6s/x9IcEiB+opu1TGuPCwfaiVVKgHeJ90+FYXQ==}
+  /@modern-js/server-plugin/1.1.4:
+    resolution: {integrity: sha512-9Q85QutK3zb+mDrbUGGA8oOAy44P3sUcWdUWVqALcZk5Jg/ZGkWemvPOR5zQpOo0hGALETUkBVppkEv9ZcKGdw==}
     dependencies:
       '@babel/runtime': 7.16.7
       '@modern-js/plugin': 1.1.2
@@ -11897,8 +11934,8 @@ packages:
       - typescript
     dev: true
 
-  /@modern-js/server/1.2.0_1081fda710492d620be948c45081f566:
-    resolution: {integrity: sha512-XcK/oDoBSFP91saqwHJb0myzhZ19eXIf8RtkNiTFTbYHCx51EAScnRjySWh/txIoEPIJiFc2dJEsfW0vKpjjzw==}
+  /@modern-js/server/1.2.1_1081fda710492d620be948c45081f566:
+    resolution: {integrity: sha512-H0iTcCsK37v8VZ502CwHBlD9GdNcxBMaivABCRPuvl407zxOMb8WHjbo94K2jh1IwYO4Ra6+vDZRkEGQ+Q5Qgg==}
     peerDependencies:
       webpack: ^5.54.0
     dependencies:
@@ -11911,7 +11948,7 @@ packages:
       '@modern-js/bff-utils': 1.1.1_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/core': 1.2.0_typescript@4.5.4
       '@modern-js/hmr-client': 1.1.1_typescript@4.5.4
-      '@modern-js/server-plugin': 1.1.3
+      '@modern-js/server-plugin': 1.1.4
       '@modern-js/server-utils': 1.1.2_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       axios: 0.21.4
@@ -11945,8 +11982,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@modern-js/server/1.2.0_7580059f3409467c8d6693cf61c6235e:
-    resolution: {integrity: sha512-XcK/oDoBSFP91saqwHJb0myzhZ19eXIf8RtkNiTFTbYHCx51EAScnRjySWh/txIoEPIJiFc2dJEsfW0vKpjjzw==}
+  /@modern-js/server/1.2.1_7580059f3409467c8d6693cf61c6235e:
+    resolution: {integrity: sha512-H0iTcCsK37v8VZ502CwHBlD9GdNcxBMaivABCRPuvl407zxOMb8WHjbo94K2jh1IwYO4Ra6+vDZRkEGQ+Q5Qgg==}
     peerDependencies:
       webpack: ^5.54.0
     dependencies:
@@ -11959,7 +11996,7 @@ packages:
       '@modern-js/bff-utils': 1.1.1_typescript@4.5.4
       '@modern-js/core': 1.2.0_typescript@4.5.4
       '@modern-js/hmr-client': 1.1.1_typescript@4.5.4
-      '@modern-js/server-plugin': 1.1.3
+      '@modern-js/server-plugin': 1.1.4
       '@modern-js/server-utils': 1.1.2_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       axios: 0.21.4_debug@4.3.3
@@ -11993,8 +12030,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@modern-js/server/1.2.0_f5e84037b2c4548dbcaffe700b19626b:
-    resolution: {integrity: sha512-XcK/oDoBSFP91saqwHJb0myzhZ19eXIf8RtkNiTFTbYHCx51EAScnRjySWh/txIoEPIJiFc2dJEsfW0vKpjjzw==}
+  /@modern-js/server/1.2.1_f5e84037b2c4548dbcaffe700b19626b:
+    resolution: {integrity: sha512-H0iTcCsK37v8VZ502CwHBlD9GdNcxBMaivABCRPuvl407zxOMb8WHjbo94K2jh1IwYO4Ra6+vDZRkEGQ+Q5Qgg==}
     peerDependencies:
       webpack: ^5.54.0
     dependencies:
@@ -12007,7 +12044,7 @@ packages:
       '@modern-js/bff-utils': 1.1.1_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/core': 1.2.0_typescript@4.5.4
       '@modern-js/hmr-client': 1.1.1_typescript@4.5.4
-      '@modern-js/server-plugin': 1.1.3
+      '@modern-js/server-plugin': 1.1.4
       '@modern-js/server-utils': 1.1.2_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       axios: 0.21.4
@@ -12040,8 +12077,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@modern-js/server/1.2.0_typescript@4.5.4:
-    resolution: {integrity: sha512-XcK/oDoBSFP91saqwHJb0myzhZ19eXIf8RtkNiTFTbYHCx51EAScnRjySWh/txIoEPIJiFc2dJEsfW0vKpjjzw==}
+  /@modern-js/server/1.2.1_typescript@4.5.4:
+    resolution: {integrity: sha512-H0iTcCsK37v8VZ502CwHBlD9GdNcxBMaivABCRPuvl407zxOMb8WHjbo94K2jh1IwYO4Ra6+vDZRkEGQ+Q5Qgg==}
     peerDependencies:
       webpack: ^5.54.0
     dependencies:
@@ -12054,7 +12091,7 @@ packages:
       '@modern-js/bff-utils': 1.1.1_typescript@4.5.4
       '@modern-js/core': 1.2.0_typescript@4.5.4
       '@modern-js/hmr-client': 1.1.1_typescript@4.5.4
-      '@modern-js/server-plugin': 1.1.3
+      '@modern-js/server-plugin': 1.1.4
       '@modern-js/server-utils': 1.1.2_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       axios: 0.21.4
@@ -12087,8 +12124,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@modern-js/server/1.2.0_typescript@4.5.4+webpack@5.65.0:
-    resolution: {integrity: sha512-XcK/oDoBSFP91saqwHJb0myzhZ19eXIf8RtkNiTFTbYHCx51EAScnRjySWh/txIoEPIJiFc2dJEsfW0vKpjjzw==}
+  /@modern-js/server/1.2.1_typescript@4.5.4+webpack@5.65.0:
+    resolution: {integrity: sha512-H0iTcCsK37v8VZ502CwHBlD9GdNcxBMaivABCRPuvl407zxOMb8WHjbo94K2jh1IwYO4Ra6+vDZRkEGQ+Q5Qgg==}
     peerDependencies:
       webpack: ^5.54.0
     dependencies:
@@ -12101,7 +12138,7 @@ packages:
       '@modern-js/bff-utils': 1.1.1_typescript@4.5.4
       '@modern-js/core': 1.2.0_typescript@4.5.4
       '@modern-js/hmr-client': 1.1.1_typescript@4.5.4
-      '@modern-js/server-plugin': 1.1.3
+      '@modern-js/server-plugin': 1.1.4
       '@modern-js/server-utils': 1.1.2_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       axios: 0.21.4
@@ -12135,8 +12172,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@modern-js/server/1.2.0_webpack@5.65.0:
-    resolution: {integrity: sha512-XcK/oDoBSFP91saqwHJb0myzhZ19eXIf8RtkNiTFTbYHCx51EAScnRjySWh/txIoEPIJiFc2dJEsfW0vKpjjzw==}
+  /@modern-js/server/1.2.1_webpack@5.65.0:
+    resolution: {integrity: sha512-H0iTcCsK37v8VZ502CwHBlD9GdNcxBMaivABCRPuvl407zxOMb8WHjbo94K2jh1IwYO4Ra6+vDZRkEGQ+Q5Qgg==}
     peerDependencies:
       webpack: ^5.54.0
     dependencies:
@@ -12149,7 +12186,7 @@ packages:
       '@modern-js/bff-utils': 1.1.1
       '@modern-js/core': 1.2.0
       '@modern-js/hmr-client': 1.1.1
-      '@modern-js/server-plugin': 1.1.3
+      '@modern-js/server-plugin': 1.1.4
       '@modern-js/server-utils': 1.1.2
       '@modern-js/utils': 1.1.6
       axios: 0.21.4
@@ -12224,7 +12261,7 @@ packages:
       '@modern-js/testing': ^1.1.1
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/server': 1.2.0_f5e84037b2c4548dbcaffe700b19626b
+      '@modern-js/server': 1.2.1_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/testing': 1.2.0_b6b6bf5d85b2b86d08f01044cdbdf5cc
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       jest-environment-node: 27.4.4
@@ -12247,7 +12284,7 @@ packages:
       '@modern-js/testing': ^1.1.1
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/server': 1.2.0_typescript@4.5.4
+      '@modern-js/server': 1.2.1_typescript@4.5.4
       '@modern-js/testing': 1.2.0_127d627dd8decc15b11b389920835e21
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       jest-environment-node: 27.4.4
@@ -12270,7 +12307,7 @@ packages:
       '@modern-js/testing': ^1.1.1
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/server': 1.2.0_typescript@4.5.4+webpack@5.65.0
+      '@modern-js/server': 1.2.1_typescript@4.5.4+webpack@5.65.0
       '@modern-js/testing': 1.2.0_127d627dd8decc15b11b389920835e21
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       jest-environment-node: 27.4.4
@@ -12293,7 +12330,7 @@ packages:
       '@modern-js/testing': ^1.1.1
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/server': 1.2.0_7580059f3409467c8d6693cf61c6235e
+      '@modern-js/server': 1.2.1_7580059f3409467c8d6693cf61c6235e
       '@modern-js/testing': 1.2.0_127d627dd8decc15b11b389920835e21
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       jest-environment-node: 27.4.4
@@ -12316,7 +12353,7 @@ packages:
       '@modern-js/testing': ^1.1.1
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/server': 1.2.0_webpack@5.65.0
+      '@modern-js/server': 1.2.1_webpack@5.65.0
       '@modern-js/testing': 1.2.0_9713eb9c1363da5241b1633aeb7f5f0c
       '@modern-js/utils': 1.1.6
       jest-environment-node: 27.4.4
@@ -12339,7 +12376,7 @@ packages:
       '@modern-js/testing': ^1.1.1
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/server': 1.2.0_1081fda710492d620be948c45081f566
+      '@modern-js/server': 1.2.1_1081fda710492d620be948c45081f566
       '@modern-js/testing': 1.2.0_b6b6bf5d85b2b86d08f01044cdbdf5cc
       '@modern-js/utils': 1.1.6_typescript@4.5.4
       jest-environment-node: 27.4.4
@@ -12722,7 +12759,7 @@ packages:
       '@modern-js/core': ^1.1.3
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-app': 1.1.1
       '@modern-js/css-config': 1.1.2
       '@modern-js/utils': 1.1.6
@@ -12780,7 +12817,7 @@ packages:
       '@modern-js/core': ^1.1.3
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-app': 1.1.1_typescript@4.5.4
       '@modern-js/css-config': 1.1.2_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4
@@ -12838,7 +12875,7 @@ packages:
       '@modern-js/core': ^1.1.3
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-app': 1.1.1_f5e84037b2c4548dbcaffe700b19626b
       '@modern-js/css-config': 1.1.2_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4
@@ -12896,7 +12933,7 @@ packages:
       '@modern-js/core': ^1.1.3
     dependencies:
       '@babel/runtime': 7.16.7
-      '@modern-js/babel-chain': 1.1.1
+      '@modern-js/babel-chain': 1.1.2
       '@modern-js/babel-preset-app': 1.1.1_typescript@4.5.4
       '@modern-js/css-config': 1.1.2_typescript@4.5.4
       '@modern-js/utils': 1.1.6_typescript@4.5.4

@@ -15,7 +15,8 @@ import { generateMApp } from './utils/MApp';
 import { AppMap, generateApps } from './utils/apps';
 
 async function initOptions(manifest: Manifest = {}, options: Options) {
-  let apps: ModulesInfo = [];
+  // let apps: ModulesInfo = [];
+  let { apps } = options;
 
   // use manifest modules
   if (manifest?.modules) {
@@ -36,8 +37,8 @@ async function initOptions(manifest: Manifest = {}, options: Options) {
   }
 
   return {
-    apps,
     ...options,
+    apps,
   };
 }
 

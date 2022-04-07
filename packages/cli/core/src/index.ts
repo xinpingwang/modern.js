@@ -4,12 +4,13 @@ import {
   ensureAbsolutePath,
   logger,
   INTERNAL_PLUGINS,
+  DEFAULT_SERVER_CONFIG,
 } from '@modern-js/utils';
 import { enable } from '@modern-js/plugin/node';
 import type { Hooks } from '@modern-js/types';
 import { ErrorObject } from 'ajv';
 import { program } from './utils/commander';
-import { resolveConfig, loadUserConfig } from './config';
+import { resolveConfig, loadUserConfig, addServerConfigToDeps } from './config';
 import { loadPlugins } from './loadPlugins';
 import {
   AppContext,
@@ -72,6 +73,7 @@ const initAppDir = async (cwd?: string): Promise<string> => {
 
 export interface CoreOptions {
   configFile?: string;
+  serverConfigFile?: string;
   packageJsonConfig?: string;
   plugins?: typeof INTERNAL_PLUGINS;
   onSchemaError?: (error: ErrorObject) => void;
@@ -82,6 +84,17 @@ export interface CoreOptions {
     sharedDir?: string;
   };
 }
+
+export const mergeOptions = (options?: CoreOptions) => {
+  const defaultOptions = {
+    serverConfigFile: DEFAULT_SERVER_CONFIG,
+  };
+
+  return {
+    ...defaultOptions,
+    ...options,
+  };
+};
 
 const createCli = () => {
   let hooksRunner: HooksRunner;
@@ -94,30 +107,39 @@ const createCli = () => {
 
     manager.clear();
 
-    restartOptions = options;
+    const mergedOptions = mergeOptions(options);
+
+    restartOptions = mergedOptions;
 
     const appDirectory = await initAppDir();
 
-    const metaName = options?.options?.metaName ?? 'MODERN';
+    const metaName = mergedOptions?.options?.metaName ?? 'MODERN';
     loadEnv(appDirectory, process.env[`${metaName.toUpperCase()}_ENV`]);
 
     const loaded = await loadUserConfig(
       appDirectory,
-      options?.configFile,
-      options?.packageJsonConfig,
+      mergedOptions?.configFile,
+      mergedOptions?.packageJsonConfig,
     );
 
     const plugins = loadPlugins(appDirectory, loaded.config, {
-      internalPlugins: options?.plugins,
+      internalPlugins: mergedOptions?.plugins,
     });
 
     plugins.forEach(plugin => plugin.cli && manager.usePlugin(plugin.cli));
 
-    const appContext = initAppContext(
+    const appContext = initAppContext({
       appDirectory,
       plugins,
-      loaded.filePath,
-      options?.options,
+      configFile: loaded.filePath,
+      options: mergedOptions?.options,
+      serverConfigFile: mergedOptions?.serverConfigFile,
+    });
+
+    addServerConfigToDeps(
+      loaded.dependencies,
+      appDirectory,
+      mergedOptions.serverConfigFile,
     );
 
     manager.run(() => {
